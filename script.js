@@ -10,11 +10,11 @@ function toObject(flavorsArr) {
   const flavorsObj = {};
 
   flavorsArr.forEach(flavor => {
-    // If key does exist, add 1 to the existing value
+    // If key does exist, add 1 to the existing value (count)
     if (flavorsObj[flavor]) {
       flavorsObj[flavor] = flavorsObj[flavor] + 1;
     } 
-    // If key doesn't exist, set the value to 1
+    // If key doesn't exist, set the initial value (count) to 1
     else {
       flavorsObj[flavor] = 1;
     }
